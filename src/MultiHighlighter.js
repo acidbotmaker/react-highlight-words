@@ -98,7 +98,6 @@ export default function MultiHighlighter ({
     chunks.push(mini_chunk)
     start_point = end_point;
   }
-  console.log(chunks)
 
   const HighlightTag = highlightTag
   let highlightIndex = -1
