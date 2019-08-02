@@ -1,7 +1,7 @@
 {
-  "name": "react-highlight-words",
+  "name": "react-multi-highlight-words",
   "version": "0.16.0",
-  "description": "React component to highlight words within a larger body of text",
+  "description": "React component to highlight multiple groups of words within a larger body of text",
   "main": "dist/main.js",
   "scripts": {
     "build": "npm run build:website && npm run build:dist",
@@ -16,8 +16,7 @@
     "postpublish": "npm run deploy",
     "prepublish": "npm run build",
     "start": "webpack-dev-server --hot --inline --config webpack.config.dev.js",
-    "test": "cross-env NODE_ENV=test karma start",
-    "watch": "watch 'clear && npm run lint -s && npm run test -s' src"
+    "watch": "watch 'clear && npm run lint"
   },
   "repository": {
     "type": "git",
