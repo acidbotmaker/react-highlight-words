@@ -52,8 +52,6 @@ export default class MultiHighlighterExample extends Component {
       new_value = new_value.split(',').map((word)=>{
         return word.trim()
       })
-    }else if(column == 'case_sensitive'){
-      new_value = new_value == 'on'
     }
     
     newtableRows[idx][column] = new_value
@@ -90,7 +88,6 @@ export default class MultiHighlighterExample extends Component {
               <tr>
               <th><h4 className={styles.Header}>Search Groups</h4></th>
               <th><h4 className={styles.Header}>Class Name</h4></th>
-              <th><h4 className={styles.Header}>Case Sensitive</h4></th>
               </tr>
             </thead>
             <tbody>
@@ -117,16 +114,6 @@ export default class MultiHighlighterExample extends Component {
                         onChange={this.handleRowChange}
                         value={tableRow.class} 
                         placeholder="Class to attach"
-                      />
-                    </td>
-                    <td>
-                      <input 
-                        className={styles.Input} 
-                        id={idx} 
-                        name="case_sensitive"
-                        onChange={this.handleRowChange}
-                        type="checkbox" 
-                        checked={tableRow.case_sensitive} 
                       />
                     </td>
                     <td>
