@@ -1,5 +1,5 @@
 import React from 'react'
-import HighlighterExample from '../src/Highlighter.example'
+import MultiHighlighterExample from '../src/MultiHighlighter.example'
 import styles from './Application.css'
 
 export default function Application () {
@@ -15,11 +15,8 @@ export default function Application () {
       </div>
       <div className={styles.body}>
         <div className={styles.card}>
-          <HighlighterExample/>
+          <MultiHighlighterExample/>
         </div>
-      </div>
-      <div className={styles.footer}>
-        react-highlight-words is available under the MIT license.
       </div>
     </div>
   )
